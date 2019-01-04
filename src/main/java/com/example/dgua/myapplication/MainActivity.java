@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 }
 
                 if (!ll) {
-                    rejectCall();
+                   // rejectCall();
                     lll = true;//超过20妙不接通电话失效
                 }
             }
@@ -224,14 +224,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             float x = values[0];
             float y = values[1];
             float z = values[2];
-           /* System.out.println(x);
-            System.out.println(y);
-            System.out.println(z);*/
-            if (x >= 0.10 && y >= 0.05 && z >= 9.50) {
+
+            if (x >= 0.10 && y >= 0.05 && z >= 9.5) {
                 tim();
-                /*System.out.println(x);
+                System.out.println(x);
                 System.out.println(y);
-                System.out.println(z);*/
+                System.out.println(z);
             }
         }
     }
